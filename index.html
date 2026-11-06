@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROBLOX 2007 Lua Sandbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hud">
+      <div class="brand">
+        <span class="badge">Lua + Physics</span>
+        <h1>ROBLOX 2007 Sandbox</h1>
+      </div>
+
+      <div class="controls">
+        <button id="runLua">Run Lua</button>
+        <button id="resetScene" class="secondary">Reset</button>
+      </div>
+    </div>
+
+    <textarea id="luaCode" spellcheck="false">move("forward", 6)
+move("right", 4)
+jump()
+say("Roblox-inspired sandbox ready")
+setColor(120, 200, 255)
+</textarea>
+
+    <div id="status" class="status">Status: running</div>
+
+    <canvas id="scene"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/fengari-web@0.1.4/dist/fengari-web.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cannon@0.6.2/build/cannon.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
